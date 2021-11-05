@@ -45,6 +45,7 @@ class MainActivity : ComponentActivity() {
                     )
                     Spacer(modifier = Modifier.height(16.dp))
                     Button(
+                        modifier = Modifier.align(Alignment.End),
                         onClick = {
                             scope.launch {
                                 scaffoldState.snackbarHostState.showSnackbar(
